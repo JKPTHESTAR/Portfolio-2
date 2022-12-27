@@ -1,0 +1,100 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html, body{
+    color: yellow;
+} */
+
+.background{
+    background-image: url("./Images/lifetimerIMG.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+   display: grid;
+   place-items: center;
+   height: 100vh;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.settingBox{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.settingBox{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 0.1px solid #099FFF;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa{
+    font-size: 3rem;
+    color: gold;
+}
+
+.settingContent{
+    display: flex;
+    gap: 1rem;
+}
+
+.settingContent input{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(204, 190, 233);
+}
+
+.settingContent button{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: green;
+    border-radius: 1rem;
+    border: none;
+}
+
+.hide{
+    display: none;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+}
+
+.outputContainer{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.outputContainer h2{
+    text-align: center;
+}
+
+#initialContentId, #afterContentID .center{
+    position: absolute;
+    left: 2rem;
+}
+
+.outputContainer{
+    padding: 1rem;
+    border: 0.1px solid #099FFF;
+    box-shadow: 0 10px 20px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* ------------------------------------------------------- Header ----------------------------------------------------- */
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* --------------------- NavBar ----------------------- */
+
+.container{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+   list-style: none;
+   display: inline;
+   margin: 10px;
+   
+}
+
+.logo{
+    width: 250px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #ff004F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+/* --------------------- Header Text & Image ----------------------- */
+
+.headerTextImage{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.headerTextImage .text{
+    font-size: 25px;
+}
+
+.headerTextImage .text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.headerTextImage .text h1 span{
+    color: #ff002f;
+}
+
+.headerSideImage{
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px white;
+}
+
+
+
+
+
+/* ------------------------------------------------------- About ----------------------------------------------------- */
+
+#about{
+    padding: 10px 0;
+    color: rgb(195, 157, 229);
+}
+
+.row{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* ---------------------- col-1 ------------------------  */
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* --------------------col-2 --------------------------  */
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.subTitle{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.heroInfo{
+    font-size: 14px;
+}
+
+.tabTitles{
+    display: flex;
+    color: #ababab;
+   margin: 20px 0 20px;
+}
+
+.tabLinks{
+    margin-right: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabLinks::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #ff004F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+}
+
+.tabLinks:hover:after{
+    width: 100%;
+}
+
+
+.tabContents ul li{
+    list-style: none;
+    margin: 10px 30px;
+    color: #ababab;
+}
+
+.tabContents ul li span{
+    color: #b54769;
+    font-size: 20px;
+}
+
+.tabContents{
+    display: none;
+}
+
+.tabContents.activeTab{
+    display: block;
+}
+
+
+
+
+/* ----------------------------------------------------- Services ----------------------------------------------------- */
+
+#services{
+    padding: 50px 0;
+}
+
+.serviceList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.serviceList div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: background 0.6s, transform 0.6s;
+}
+
+.serviceList div i{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.serviceList div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.serviceList div a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.serviceList div:hover{
+    background: #ff004f ;
+    transform: translateY(-25px);
+}
+
+
+
+
+/* ----------------------------------------------------- Projects ----------------------------------------------------- */
+
+#projects{
+   padding: 50px 0;
+}
+
+.workList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 100px;
+    margin: 100px 0;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    display: block;
+    transition: transform  0.6s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.6s;
+}
+
+.layer h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid #ff004f;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.6s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+
+
+
+/* ----------------------------------------------------- Contact ----------------------------------------------------- */
+
+.contactLeft{
+    flex-basis: 35%;
+}
+
+.contactRight{
+    flex-basis: 65%;
+}
+
+
+/* -------------------- Contact-Left --------------------------  */
+
+.contactLeft p{
+    margin-top: 30px;
+}
+
+.contactLeft p i{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ff004F;
+}
+
+.socialIcons {
+    margin-top: 30px;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    color: #fff;
+    transition: 0.4s;
+} 
+
+.socialIcons a:hover{
+    color: #ff004F;
+    transform: translateY(-6px) scale(1.3);
+}
+
+.downloadBtn{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff004f;
+}
+
+.downloadBtn:hover{
+    opacity: 0.7;
+}
+
+
+/* -------------------- Contact-Right --------------------------  */
+
+.contactRight form{
+    width: 100%;
+}
+
+.contactRight form input, textarea{
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #262626;;
+}
+
+.contactRight form button{
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 60px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff004f;
+    cursor: pointer;
+}
+
+.contactRight form button:hover{
+    opacity: 0.7;
+}
+
+.viewSheet{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff004f;
+}
+
+.viewSheet:hover{
+    opacity: 0.7;
+}
+
+#formReply{
+    display: block;
+    margin-top: 20px;
+    color: #61b752;
+}
+
+
+
+/* ----------------------------------------------------- Footer ----------------------------------------------------- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #262626;
+}
+
+.footer i{
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- Responsive ----------------------------------------------------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+
+/* -------------------- Header ----------------------- */
+    body{
+        max-width: 420px
+    };
+
+    #header{
+        width: 400px;
+        height: 500px;
+    }
+
+    #header .container nav img{
+        width: 180px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100%;
+        padding-top: 50px;
+        transition: 0.6s;
+        z-index: 5;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #header .container .headerTextImage img{
+        width : 375px;
+        height: 300px;
+    }
+        
+    .headerTextImage .text{
+        position: absolute;
+        margin: 10px;
+        width: 340px;
+        font-size: 16px;
+    }
+
+    .headerTextImage .text h1{
+        font-size: 30px;
+    }
+
+
+/* -------------------- About ----------------------- */
+
+
+    .subTitle{
+        font-size: 30px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tabLinks{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+/* -------------------- Contact ----------------------- */
+
+
+    .contactLeft, .contactRight{
+        flex-basis: 100%;
+    }
+
+    .contactLeft p{
+        font-size: 16px;
+    }
+
+
+/* -------------------- Footer ----------------------- */
+
+
+    .footer{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+
+}

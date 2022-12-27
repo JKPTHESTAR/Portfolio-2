@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKPTHESTAR Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d57245788e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <img src="./images/logo/logo1.PNG" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="headerTextImage">
+                <div class="text">
+                    <h1>Hi, I'm Jigar Parmar from <span>INDIA</span></h1>
+                    <p>The Web Developer</p>
+                </div>
+                <img src="./images/hero/sideIMG.webp" class="headerSideImage">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <dic id="about">
+        <dic class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./images/hero/heroIMG.png">
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="subTitle">About Me</h1>
+                    <p class="heroInfo">My name is Jigar Parmar. I graduated from Pillai HOC college of engineering and technology from Mumbai University. I completed 1 month web development internship at Sahu Technologies. I also completed a Web development course from Udemy of around 65 hours. Now I am pursuing ReactJS course on udemy online platform. <br>Currently I am working at MITR media & learning Pvt Ldt as a software Devloper. Now I am looking for opportunity to enhance my knowledge in this field. If I am eligible for the Job of Software Devloper then please inform me.</p>
+
+                    <div class="tabTitles">
+                        <p class="tabLinks" onclick="openTab('education')">Education</p>
+                        <p class="tabLinks" onclick="openTab('skills')">Skills</p>
+                        <p class="tabLinks" onclick="openTab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tabContents activeTab" id="education">
+                        <ul>
+                            <li><span>BE-IT</span><br>Pillai HOC College Of Engineering & Technology<br>77%</li>
+                            <li><span>HSC/12th</span><br>S. P. Jain Junior College<br>76.30%</li>
+                            <li><span>SSC/10th</span>G. R. Agrawal Vidyamandir<br>83.20%</li>
+                        </ul>
+                    </div>
+
+                    <div class="tabContents" id="skills">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>MySQL</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tabContents" id="experience">
+                        <ul>
+                            <li><span>Web Development Internship</span><br>At Sahu Technologies<br>(07/2022 - 08/2022)</li>
+                            <li><span>Web Development Course</span><br>At Udemy Online Platform<br>Duration-65 Hours </li>
+                            <li><span>Working At</span><br>MITR Learning & Media Pvt Ltd<br>Software Developer</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </dic>
+    </dic>
+
+
+
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="subTitle">My Services</h1>
+            <div class="serviceList">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>HTML (HyperText Markup Language) is use to provide structure to web applications. I made many projects using this language like Form tamplate, Calculator, etc.</p>
+                    <a href="https://www.w3schools.com/html/" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>CSS (Cascading Style Sheets) is use to give style to websites or web apps. I have completed many projects using CSS for example Tindog clone website, Dice game, etc.</p>
+                    <a href="https://www.w3schools.com/css/" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JAvaScript</h2>
+                    <p>JavaScript language is use to write logical code. To make website or web app live. I also made some projects like Github profile viewer, QA code generator, Life Timer, etc.</p>
+                    <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="projects">
+        <div class="container">
+
+            <div class="subTitle">My Projects</div>
+
+            <div class="workList">
+
+                <div class="work">
+                    <img src="./images/project_img/3.png">
+                    <div class="layer">
+                        <h3>Github Profile Viewer</h3>
+                        <p>This web application is usefull to search Github profile. It will show users all profile details & you can also visit users GitHub Account.</p>
+                        <a href="./GitHub-Profile-Viewer/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/5.PNG">
+                    <div class="layer">
+                        <h3>Marks Calculator</h3>
+                        <p>This web application is usefull to calculate students percentage and according to percentage application will also give grade to student.</p>
+                        <a href="./Marks Calculator/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/6.png">
+                    <div class="layer">
+                        <h3>QR Code Generator</h3>
+                        <p>This web application is usefull to generate QA code by entering some text. To Decrypt QR code we have to scan QA code then we will get entered text.</p>
+                        <a href="./QR-Code-Generator/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/2.png">
+                    <div class="layer">
+                        <h3>Expense Tracker</h3>
+                        <p>This web application is usefull to track expenses. It will show earnings, expenses & balance info. It will also show transaction history.</p>
+                        <a href="./Expense-Tracker/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/4.PNG">
+                    <div class="layer">
+                        <h3>Life Timer</h3>
+                        <p>This web application is usefull to see total time covered till now from given date. You can calculate your age in years-month-days-hours-minutes-seconds</p>
+                        <a href="./Life-Timer/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/7.PNG">
+                    <div class="layer">
+                        <h3>Tin-Dog Clone</h3>
+                        <p>This web application is clone of Tin-Dog website.</p>
+                        <a href="./TinDog-Start-master/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/1.PNG">
+                    <div class="layer">
+                        <h3>Dice Game</h3>
+                        <p>This web application is usefull to play dice game. This web application generate random dice numbers.</p>
+                        <a href="./Dicee-Game/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/project_img/8.png">
+                    <div class="layer">
+                        <h3>Old portfolio website</h3>
+                        <p>This is my old portfolio website. </p>
+                        <a href="./Portfolio/index.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <a href="#" class="btn">See More</a> -->
+
+        </div>
+    </div>
+
+
+  
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contactLeft">
+                    <h1 class="subTitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> jigarparmar2408200@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 8446434907</p>
+                    <div class="socialIcons">
+                        <a href="https://www.linkedin.com/in/jigar-parmar-9ba467250" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=" https://github.com/JKPTHESTAR?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/jkpthestar/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/jigar.parmar.5036459?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <a href="./images/Jigar_1 (1).pdf" download class="downloadBtn">Download</a>
+                </div>
+
+                <div class="contactRight">
+
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message" required></textarea>                        
+                        <button type="submit">Submit</button>
+                        <a href="https://docs.google.com/spreadsheets/d/12utu6zfrCHQlp_LUEhaIqKPZ4XqQZME68IMRYLCQ764/edit#gid=0" target="_blank" class="viewSheet">View</a>
+
+                    </form>
+
+                    <span id="formReply"></span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <p>Made with <i class="fa-solid fa-heart"></i> by JKPTHESTAR</p>
+    </div>
+
+
+
+
+    
+
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
